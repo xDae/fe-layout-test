@@ -1,0 +1,24 @@
+.l-sub-home {
+  @include cf;
+
+  &__blog {
+    @include mq(tablet) {
+      @include col(2/3, $cycle: 2, $gutter: 1);
+    };
+  }
+
+  &__video {
+    @include mq(tablet) {
+      @include col(1/3, $cycle: 2, $gutter: 1);
+    };
+  }
+}
+
+.l-article-container {
+  @include col(1/1, $gutter: 1);
+  margin-bottom: $margin-base*2;
+
+  @include mq(phablet) {
+    @include col(1/2, $cycle: 2, $gutter: 1);
+  };
+}

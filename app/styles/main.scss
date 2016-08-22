@@ -8,16 +8,18 @@
 @import "./layout/layout";
 @import "./layout/header";
 @import "./layout/featured";
+@import "./layout/sub-home";
 @import "./layout/footer";
 
 // Components
-@import "./components/logo";
 @import "./components/header-form";
 @import "./components/header-nav";
 @import "./components/featured-box";
+@import "./components/blog-card";
 @import "./components/footer-nav";
 
 @import "./helpers/helpers";
+@import "./helpers/typography";
 
 // @include edit; // uncomment to see the grid on screen
 

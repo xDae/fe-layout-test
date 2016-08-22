@@ -1,0 +1,28 @@
+.blog-card {
+  @include cf;
+
+  &__img-col {
+    @include col(2/6, $gutter: 1);
+
+    padding-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__header {
+    @include col(4/6, $gutter: 1);
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $gray-dark;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
