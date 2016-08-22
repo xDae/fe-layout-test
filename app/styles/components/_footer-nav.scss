@@ -8,15 +8,17 @@
   };
 
   &__item {
-
-    margin-bottom: 10px;
+    margin-bottom: $margin-base;
 
     @include mq(tablet) {
-      margin: 0 10px;
-    }
+      margin-right: -4px;
 
-    &:after:not(:last-child) {
-      content: '|';
+      &:not(:last-child):after {
+        content: '|';
+        color: $gray;
+        font-size: 12px;
+        margin-right: $margin-base;
+      }
     }
   }
 
