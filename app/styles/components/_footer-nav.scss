@@ -1,0 +1,33 @@
+.footer-nav {
+  margin: 0;
+  text-align: center;
+
+  @include mq(tablet) {
+    display: flex;
+    text-align: left;
+  };
+
+  &__item {
+
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+      margin: 0 10px;
+    }
+
+    &:after:not(:last-child) {
+      content: '|';
+    }
+  }
+
+  &__link {
+    color: $gray;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}

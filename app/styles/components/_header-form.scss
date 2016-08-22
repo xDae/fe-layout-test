@@ -1,0 +1,36 @@
+.header-form {
+  &__input {
+    border: 0;
+    border-bottom: 2px solid $gray;
+    text-transform: uppercase;
+    color: $gray-light;
+    transition: all .2s ease;
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-bottom: 2px solid $red;
+    }
+
+    @include mq($until: tablet) {
+      width: 70%;
+      font-size: 22px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    border: 0;
+    background: none;
+
+    &::before {
+      content: '\e800';
+      font-family: "fontello";
+      color: $gray;
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      cursor: pointer;
+    }
+  }
+}

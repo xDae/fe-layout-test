@@ -1,0 +1,15 @@
+.l-container {
+  @include center($tablet, $pad: 10px);
+
+  @include mq($tablet) {
+    @include center($desktop, $pad: 20px);
+  };
+}
+
+.l-main {
+  @include center($tablet, $pad: 10px);
+
+  @include mq($tablet) {
+    @include center($desktop, $pad: 20px);
+  };
+}

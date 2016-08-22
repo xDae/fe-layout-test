@@ -1,0 +1,39 @@
+.header-nav {
+  margin: 10px 0;
+  text-align: center;
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  };
+
+  &-wrapper {
+    width: 100%;
+    border-top: 2px solid $gray-light;
+    border-bottom: 2px solid $gray-light;
+  }
+
+  &__item {
+    @include mq($until: tablet) {
+      margin: 20px;
+    }
+  }
+
+  &__link {
+    color: $gray-dark;
+    text-transform: uppercase;
+    transition: color .2s ease;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+      color: $gray;
+    }
+
+    &--featured {
+      color: $red;
+      border-bottom: 2px solid $red;
+    }
+  }
+}

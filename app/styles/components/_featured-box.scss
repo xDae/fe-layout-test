@@ -1,0 +1,54 @@
+.featured-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 220px;
+
+  &:hover &__overlay  {
+    opacity: 1
+  }
+
+  &__overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to top right, rgba(207,46,84,0.5) 0%, rgba(110,247,104,0.5) 100%);
+    transition: opacity .1s ease;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    &--tee {
+      background-image: url('http://lorempicsum.com/futurama/440/220/1');
+    }
+
+    &--fins {
+      background-image: url('http://lorempicsum.com/futurama/220/220/4');
+    }
+
+    &--shirt {
+      background-image: url('http://lorempicsum.com/futurama/220/220/3');
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 3px 3px 4px rgba($gray-dark, 1);
+    z-index: 2;
+  }
+}

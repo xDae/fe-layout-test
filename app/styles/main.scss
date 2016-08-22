@@ -1,0 +1,52 @@
+@import "./variables.scss";
+@import "../../node_modules/jeet/scss/jeet/jeet"; // Grid system
+@import "./mq-config";
+
+@import "./icon-font";
+
+// Layout
+@import "./layout/layout";
+@import "./layout/header";
+@import "./layout/featured";
+@import "./layout/footer";
+
+// Components
+@import "./components/logo";
+@import "./components/header-form";
+@import "./components/header-nav";
+@import "./components/featured-box";
+@import "./components/footer-nav";
+
+@import "./helpers/helpers";
+
+// @include edit; // uncomment to see the grid on screen
+
+// General Styles
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+iframe {
+  max-width: 100%;
+}

@@ -1,0 +1,25 @@
+.l-featured {
+  @include cf;
+
+  &__item {
+    position: relative;
+    max-height: 220px;
+    margin-bottom: 10px;
+
+    &--full {
+      @include col(1/2, $cycle: 2, $gutter: 1);
+
+      @include mq(tablet) {
+        @include col(2/4, $cycle: 3, $gutter: 1);
+      };
+    }
+
+    &--half {
+      @include col(1/2, $cycle: 2, $gutter: 1);
+
+      @include mq(tablet) {
+        @include col(1/4, $cycle: 3, $gutter: 1);
+      };
+    }
+  }
+}
