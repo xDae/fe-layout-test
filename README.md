@@ -18,7 +18,7 @@ Create a Production version of the App: run ``gulp`` (the default task)
 it will create a ``App`` folder with a production ready App, minified resources, etc...
 
 ## Methodologies
-The layout is component based following [BEM Methodologie](https://css-tricks.com/bem-101/)
+The layout is component based following [BEM methodology](https://css-tricks.com/bem-101/)
 
 The architecture is based in [SMACSS](http://timhartmann.net/frontend-development/scss-styleguide-with-bem-oocss-smacss/), a good aproach to maintenain big project scalable
 
